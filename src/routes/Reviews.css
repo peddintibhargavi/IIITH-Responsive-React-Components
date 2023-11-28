@@ -1,0 +1,79 @@
+.pie-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  min-height: 100vh;
+  overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+.pie-card {
+  width: calc(50% - 10px);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.pie-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(236, 24, 24, 0.2);
+}
+
+.pie-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin: 2px 0;
+}
+
+@media (max-width: 1024px) {
+  .pie-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .contact {
+    margin-top: 0;
+  }
+
+  .copyright {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .copyright {
+    font-size: 10px;
+  }
+}

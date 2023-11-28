@@ -1,0 +1,126 @@
+/* Table.css */
+
+/* Container for the entire table */
+.Table-container {
+  min-height: 100vh;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  max-width: 100%; /* Maintain responsiveness */
+}
+
+/* Styling for the table */
+table {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px; /* Set a fixed maximum width for the table */
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-bottom: 100px;
+  white-space: nowrap; /* Prevent text wrapping inside cells */
+}
+
+/* Styling for the table header */
+thead {
+  background-color: #f2f2f2;
+  padding: 5px;
+}
+
+/* Styling for even rows in the table body */
+tbody tr:nth-child(even) {
+  background-color: #eee;
+  vertical-align: middle;
+}
+
+/* Styling for odd rows in the table body */
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+/* Styling for table header cells */
+th {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+/* Styling for table body */
+tbody {
+  padding: 5px;
+}
+
+/* Styling for each table row */
+tr {
+  background-color: #fff;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Styling for table cells */
+td {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Responsive styles for smaller screens */
+/* Responsive styles for smaller screens */
+@media (max-width: 1024px) {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+  thead {
+    display: none; /* Hide the table header on smaller screens */
+  }
+  tbody {
+    tr {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    td {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}
+
+/* Responsive styles for even smaller screens */
+@media (max-width: 768px) {
+  table {
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+  h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-top: 60px;
+  }
+}
+
+/* Additional styles for the responsive table */
+.responsive-table {
+  margin-top: 20px;
+  min-height: 100vh;
+}
+
+/* Styles for the search bar */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+/* Styles for the search input */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
